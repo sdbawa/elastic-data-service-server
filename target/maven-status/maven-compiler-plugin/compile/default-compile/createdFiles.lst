@@ -1,0 +1,6 @@
+com\graphql\Application.class
+com\graphql\controller\QueryController.class
+com\graphql\datafetcher\AllPeopleDataFetcher.class
+com\graphql\datafetcher\PersonDataFetcher.class
+com\graphql\repository\PersonRepository.class
+com\graphql\model\Person.class

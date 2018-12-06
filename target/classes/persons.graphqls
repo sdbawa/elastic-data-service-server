@@ -1,0 +1,33 @@
+schema{
+    query:Query
+    mutation:Mutation
+}
+
+
+type Query {
+    queryAllPeople : [Person]
+    queryPersonById(id: String) : Person
+    queryPersonWithDetailsById(id: String) : PersonInfo
+}
+
+type Mutation {
+  mutatePersonName(firstName: String!) : Person
+  mutatePersonNameAge(firstName: String!, age: Int!) : Person
+}
+
+type Person {
+    id : Int
+    firstName : String
+    age : Int
+}
+
+type PersonInfo {
+    person : Person
+    personDetails : PersonDetails
+}
+
+type PersonDetails {
+    id : String
+    address : String
+    ssn : String
+}
